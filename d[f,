@@ -1,0 +1,141 @@
+[33mcommit 6476550b5ff315a23b7df89fd838b93d83b9879e[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: amjada <amjdaf@hotmail.com>
+Date:   Wed Mar 27 21:53:40 2019 +0300
+
+    the first
+
+[1mdiff --git a/sid.java b/sid.java[m
+[1mindex e69de29..321d31f 100644[m
+[1m--- a/sid.java[m
+[1m+++ b/sid.java[m
+[36m@@ -0,0 +1,130 @@[m
+[32m+[m[32m/*[m[41m [m
+[32m+[m[32mQ1/[m
+[32m+[m[32mstatic[m
+[32m+[m[32m-method name[m
+[32m+[m[32m3-method overloading[m
+[32m+[m[32m4-without creating an instance of the class in which main is declared[m
+[32m+[m[32m5-int[] n = { 1, 2, 3, 4, 5 };[m
+[32m+[m[32m6-Incrementing the value stored in each element of the array.[m
+[32m+[m[32m7-equals[m
+[32m+[m[32m8-ArrayList[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32mq4/[m
+[32m+[m[32mWe have 1 cars, Car ID is 0[m
+[32m+[m[32mWe have 2 cars, Car ID is 1[m
+[32m+[m[32mWe have 3 cars, Car ID is 2[m
+[32m+[m[32m */[m
+[32m+[m[32mpackage assignment1.amjad.farhat.pkg438051568;[m
+[32m+[m
+[32m+[m[32mimport java.util.Arrays;[m
+[32m+[m[32mimport java.util.ArrayList;[m
+[32m+[m[32mimport java.util.Scanner;[m
+[32m+[m
+[32m+[m[32mpublic class Assignment1AmjadFarhat438051568 {[m
+[32m+[m
+[32m+[m[41m [m
+[32m+[m[32m    public static void main(String[] args) {[m
+[32m+[m[32m    Scanner  m= new Scanner (System.in);[m
+[32m+[m[41m    [m
+[32m+[m[41m    [m
+[32m+[m[41m    [m
+[32m+[m[32m        System.out.println(" 30 salaries");[m
+[32m+[m[32m    double salaries []= new double [30];[m
+[32m+[m[41m    [m
+[32m+[m[41m    [m
+[32m+[m[32m    for(int i=0;i<salaries.length;i++)[m
+[32m+[m[41m        [m
+[32m+[m[32m        salaries[i]= m.nextInt();[m
+[32m+[m[41m    [m
+[32m+[m[41m    [m
+[32m+[m
+[32m+[m[32m   Arrays.sort(salaries);[m
+[32m+[m[32m        System.out.println("inter the salaries for search");[m
+[32m+[m[32m          int search =  m.nextInt();[m
+[32m+[m[41m        [m
+[32m+[m[32m         if(Arrays.binarySearch(salaries,search )>=0)[m
+[32m+[m[32m             System.out.println("found");[m
+[32m+[m[32m         else[m
+[32m+[m[32m             System.out.println("not found");[m
+[32m+[m[41m         [m
+[32m+[m[32m        double array[]=new double [10];[m
+[32m+[m[41m        [m
+[32m+[m[41m        [m
+[32m+[m[41m        [m
+[32m+[m[32m       System.arraycopy(salaries,0,array,0,array.length);[m
+[32m+[m[41m       [m
+[32m+[m[41m       [m
+[32m+[m[41m       [m
+[32m+[m[41m       [m
+[32m+[m[32m       for(int i=0;i<array.length;i++){[m
+[32m+[m[32m           System.out.println(array[i]);[m
+[32m+[m[41m           [m
+[32m+[m[41m           [m
+[32m+[m[41m           [m
+[32m+[m[32m       }[m
+[32m+[m[32m       ArrayList<String>s =new ArrayList<String>(50);[m
+[32m+[m[32m        System.out.println("enter 10 student name ");[m
+[32m+[m[32m        for(int i=0;i<10;i++){[m
+[32m+[m[32m          String f =  m.next();[m
+[32m+[m[32m         s.add(6, f);[m
+[32m+[m[32m        }[m
+[32m+[m[41m        [m
+[32m+[m[41m        [m
+[32m+[m[41m        [m
+[32m+[m[41m    [m
+[32m+[m[32m       s.add("raed");[m
+[32m+[m[32m       s.remove(8);[m
+[32m+[m[32m       s.add(6,"maher");[m
+[32m+[m[41m       [m
+[32m+[m[41m       [m
+[32m+[m[41m       [m
+[32m+[m[41m       [m
+[32m+[m[32m        System.out.println("enter student name ");[m
+[32m+[m[32m      String studnt2 =  m.next();[m
+[32m+[m[32m        if(s.contains(studnt2))[m
+[32m+[m[32m            System.out.println("exist");[m
+[32m+[m[41m        [m
+[32m+[m[41m        [m
+[32m+[m[41m        [m
+[32m+[m[41m        [m
+[32m+[m[32m        else[m
+[32m+[m[32m            System.out.println("non exist");[m
+[32m+[m[41m        [m
+[32m+[m[32m        s.trimToSize();[m
+[32m+[m[41m        [m
+[32m+[m[32m        for(String u :s){[m
+[32m+[m[41m            [m
+[32m+[m[41m            [m
+[32m+[m[32m            System.out.println(u);[m
+[32m+[m[32m        }[m
+[32m+[m[41m        [m
+[32m+[m[41m        [m
+[32m+[m[41m         [m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+[32m+[m[32m}[m
+[32m+[m[32mclass Lol{[m
+[32m+[m[32m    private int x ;[m
+[32m+[m[32m    private  String y;[m
+[32m+[m[41m    [m
+[32m+[m[32m    public Lol (int x) {[m
+[32m+[m[32m        this.x = x;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    public int getX() {[m
+[32m+[m[32m        return x;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[41m    [m
+[32m+[m
+[32m+[m[32m    public  String getY(int x) {[m
+[32m+[m[32m        return y;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    public  String getY(){[m
+[32m+[m[32m        return y;[m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+[32m+[m[32m}[m
+[32m+[m
